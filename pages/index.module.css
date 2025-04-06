@@ -1,0 +1,24 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .catImage {
+    width: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 画像読込中の背景を縦スクロールするためのアニメーション */
+@keyframes scroll {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 90px;
+    }
+  }
